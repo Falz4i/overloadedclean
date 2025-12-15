@@ -1,0 +1,46 @@
+name: overloadedclean
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # State Management
+  get: ^4.6.6
+
+  # Networking
+  http: ^1.2.0
+
+  # Local Storage & Backend
+  shared_preferences: ^2.2.0
+  supabase_flutter: ^2.0.0
+  flutter_dotenv: ^5.1.0  # <--- TAMBAHKAN INI (WAJIB)
+
+  # Location & Maps
+  geolocator: ^13.0.0
+  flutter_map: ^6.0.0
+  latlong2: ^0.9.0
+
+  # Firebase & Notifications
+  firebase_core: ^3.0.0
+  firebase_messaging: ^15.0.0
+  flutter_local_notifications: ^17.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # TAMBAHKAN BAGIAN ASSETS INI (WAJIB)
+  assets:
+    - .env
